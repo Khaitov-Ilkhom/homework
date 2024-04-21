@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
           integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
           crossorigin="anonymous" referrerpolicy="no-referrer"/>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
     <title>Title</title>
 </head>
 <body>
@@ -91,7 +91,8 @@
                 <div class="sec-2-box">
                     <div class="box-text">
                         <h4 class="sec2-h4">Самый лучший театр СПБ</h4>
-                        <p class="sec2-p">Как свидетельствуют архивные документы, первое каменное здание Большого театра начали
+                        <p class="sec2-p">Как свидетельствуют архивные документы, первое каменное здание Большого театра
+                            начали
                             возводить в 1775 году по проекту Антонио Ринальди. В дальнейшем, после того как Ринальди
                             упал с лесов и не мог лично наблюдать за ходом работ, Екатерина II поручила немецкому
                             театральному декоратору и архитектору Людвигу Филиппу Тишбейну создать новый проект театра,
@@ -120,7 +121,7 @@
     <div class="grid-item3">
         <div class="containerr">
             <div class="carousel-sec">
-                <h3></h3>
+                <h3 class="carousel-text"><span class="carousel-text-color">наши</span> постановки</h3>
                 <div class="swiper mySwiperr">
                     <div class="swiper-wrapper">
                         <div class="swiper-slide">
@@ -169,7 +170,7 @@
         </div>
     </div>
     <div class="grid-item4">
-        <div class="container">
+        <div class="container commentary">
             <img class="bg-img-sec4" src="./img/commentary.png" alt="...">
             <div class="commentary-sec">
                 <div class="commentary-left">
@@ -187,11 +188,76 @@
     </div>
     <div class="grid-item5">
         <div class="container">
-            Partner
+            <div class="partner-box">
+                <h3 class="carousel-text"><span class="carousel-text-color"> партнеры</span> театра</h3>
+                <div class="box-partner">
+                    <div class="partner-images">
+                        <img class="partner-img" src="./img/partner.png" alt="...">
+                    </div>
+                    <div class="partner-images">
+                        <img class="partner-img" src="./img/partner.png" alt="...">
+                    </div>
+                    <div class="partner-images">
+                        <img class="partner-img" src="./img/partner.png" alt="...">
+                    </div>
+                    <div class="partner-images">
+                        <img class="partner-img" src="./img/partner.png" alt="...">
+                    </div>
+                    <div class="partner-images">
+                        <img class="partner-img" src="./img/partner.png" alt="...">
+                    </div>
+                    <div class="partner-images">
+                        <img class="partner-img" src="./img/partner.png" alt="...">
+                    </div>
+                    <div class="partner-images">
+                        <img class="partner-img" src="./img/partner.png" alt="...">
+                    </div>
+                    <div class="partner-images">
+                        <img class="partner-img" src="./img/partner.png" alt="...">
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
     <div class="grid-item6">
-        <div class="container"> Footer
+        <div class="container">
+            <div class="footer">
+<!--                <h3 class="carousel-text"><span class="carousel-text-color">стать</span> меценатом</h3>-->
+                <div class="numbers">
+                    <p class="footer-text">+7 (812) 123-45-55</p>
+                    <p class="footer-text">+7 (812) 123-45-66</p>
+                    <p class="footer-text">info@theater.ru</p>
+                    <p class="footer-text">г. санкт-петербург, невский 140</p>
+                </div>
+                <div class="inputs">
+                    <div class="footer-input1">
+                        <input class="input-style" type="text" name="name" placeholder="Имя..">
+                    </div>
+                    <div class="footer-input2">
+                        <input class="input-style" type="text" name="namecompany" placeholder="Компания..">
+                    </div>
+                    <div class="footer-input3">
+                        <input class="input-style" type="number" name="phonenumber" placeholder="Телефон..">
+                    </div>
+                    <div class="footer-input4">
+                        <input class="input-style" type="email" name="email" placeholder="E-mail..">
+                    </div>
+                    <div class="footer-input5">
+                        <textarea class="input-style" name="textarea" cols="30" rows="6" placeholder="Сообщение.."></textarea>
+                    </div>
+                    <div class="footer-input6">
+                        <p class="footer-p">* Ваши данные не будут переданы третьим лицам, 100% вероятность. Конфиденциальность мы
+                            гарантируем, и защищаем персональные данные согласно законку ФЗ-52.</p>
+                    </div>
+                    <div class="footer-input7">
+                        <button class="footer-btn" type="submit">отправить</button>
+                    </div>
+                </div>
+<!--                <div class="bottom">-->
+<!--                    <p class="footer-b">(с) Все права защищены. Большой театр. 2020</p>-->
+<!--                    <p class="footer-b">Разработано d-e-n.ru</p>-->
+<!--                </div>-->
+            </div>
         </div>
     </div>
 </div>
@@ -201,7 +267,7 @@
 <!-- Initialize Swiper -->
 <script>
     var swiper = new Swiper(".mySwiper", {
-        loop:true,
+        loop: true,
         effect: "cards",
         grabCursor: true,
     });

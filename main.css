@@ -277,6 +277,17 @@ body {
 .carousel-img {
     position: relative;
 }
+.carousel-text {
+    font-size: 36px;
+    font-weight: 300;
+    line-height: 40px;
+    color: #ffffff;
+    text-transform: uppercase;
+    margin-bottom: 50px;
+}
+.carousel-text-color {
+    color: #D1A954;
+}
 .sec3-p {
     top: 0;
     font-size: 16px;
@@ -297,17 +308,20 @@ body {
     top: 250px;
 }
 /* commentary sec */
+.commentary {
+    margin-top: 100px;
+}
 .commentary-sec {
-    max-width: 500px;
+    max-width: 600px;
     position: absolute;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 120px;
+    margin-top: 170px;
 }
 .bg-img-sec4 {
     position: relative;
-    max-width: 800px;
+    max-width: 1000px;
 }
 .year-h3 {
     font-size: 32px;
@@ -325,9 +339,122 @@ body {
     color: #ffffff;
     padding: 0 40px;
 }
-
-
-
+/* partner sec */
+.partner-box {
+    max-width: 1000px;
+    margin-top: 100px;
+}
+.partner-img {
+    max-width: 200px;
+}
+.box-partner {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 30px;
+}
+/* footer */
+.footer {
+    max-width: 1100px;
+    margin-top: 100px;
+    display: grid;
+    grid-template-areas:
+    'footer1 footer1 footer footer footer footer';
+    gap: 20px;
+}
+.numbers {
+    grid-area: footer1;
+    display: grid;
+    grid-template-rows: repeat(4, 30px);
+    text-align: start;
+}
+.footer-text {
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+    color: #ffffff;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+}
+.footer-text:hover {
+    border-bottom: 2px solid #D1A954;
+}
+.inputs {
+    grid-area: footer;
+    display: grid;
+    grid-template-areas:
+    'name companyname textarea textarea'
+    'phonenumber email textarea textarea'
+    'text text . button';
+    gap: 20px;
+}
+.footer-input1 {
+    grid-area: name;
+}
+.footer-input2 {
+    grid-area: companyname;
+}
+.footer-input3 {
+    grid-area: phonenumber;
+}
+.footer-input4 {
+    grid-area: email;
+}
+.footer-input5 {
+    grid-area: textarea;
+}
+.footer-input6 {
+    grid-area: text;
+}
+.footer-input7 {
+    grid-area: button;
+}
+.input-style {
+    width: 100%;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 18px;
+    color: #989898;
+    background: #616161;
+    padding: 8px 10px;
+    border: none;
+}
+.input-style:focus {
+    outline: none;
+}
+.footer-p {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 18px;
+    text-align: left;
+    color: #989898;
+}
+.footer-btn {
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+    text-align: center;
+    color: #ffffff;
+    background: #D1A954;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    border: 1px solid #D1A954;
+    border-radius: 8px;
+}
+.footer-btn:hover {
+    background: rgba(209, 169, 84, 0.5);
+}
+.bottom {
+    display: flex;
+    justify-content: space-around;
+}
+.footer-b {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 18px;
+    color: #989898;
+}
 
 
 
